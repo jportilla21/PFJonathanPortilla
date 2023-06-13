@@ -1,0 +1,53 @@
+/* BARRA NAVEGACION PRINCIPAL */
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+
+    img{
+        height: 130px;
+        width: 160px;
+        margin-right: 10px;
+    }
+}
+
+.nav-link{
+    color: orange;
+    white-space: pre-wrap !important; /* Evita el salto de línea */
+    overflow: hidden; /* Oculta el texto excedente */
+    text-overflow: ellipsis; /* Muestra puntos suspensivos (...) */
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.navbar-toggler{
+    background-color: #c28550f5;
+    border: var(--bs-border-width) solid rgba(255, 136, 0, 0.327);
+    margin-right: 20px;
+}
+
+.navbar-nav{
+    padding-left: 15px;
+}
+
+/* CAROUSEL */
+.container-fluid{
+    --bs-gutter-x: none;
+}
+
+.img-fluid{ /* Imagen Responsive */
+    max-width: 100%;
+    height: auto;
+}
+
+#carouselsection{
+    width: 100%;
+    height: 90%;
+}
+
+.carousel-inner img{
+    height: 645px;
+}

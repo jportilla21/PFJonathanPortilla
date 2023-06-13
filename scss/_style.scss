@@ -1,0 +1,215 @@
+/* TÍTULOS GENERALES */
+h4 {
+    color: $color-h4;
+    text-align: $text-align-h4;
+    margin-top: 20px;
+}
+
+/* PÁGINA INICIO */
+h6 {
+    text-align: center;
+    color: rgb(255, 149, 0);
+    margin-top: 10px;
+}
+
+.container{
+    margin-top: 40px;
+}
+
+/* PÁGINA ACERCA DE NOSOTROS */
+.gridacerca{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: minmax(auto, 70px);
+    gap: 3em;
+    width: 100%;
+}
+
+.infoacerca{
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+
+.imagenbulto {
+    width: 500px;
+    height: 500px;
+}
+
+.footeracerca{
+    margin-top: 300px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: auto auto;
+}
+
+.article{
+    width: 95%;
+    max-width: 90%;
+    margin: 1em auto;
+    display: grid;
+    gap: 1em;
+    text-align: justify;
+}
+
+.col h5{
+    text-align: center;
+    color: orange;
+}
+
+.col p{
+    text-align: justify;
+    gap: 2em;
+}
+
+/* PÁGINA LÍNEAS PORCINOS */
+.paddingtop {
+    padding-top: 30px;
+}
+
+.fotofooter {
+    display: flex;
+}
+
+.fotoporcinos {
+    padding-top: 30px;
+    width: 1000px;
+}
+
+/* PÁGINA CONTÁCTENOS */
+.logoredsocial img{
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+
+}
+
+.textoredes {
+    padding: 15px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width:1280px){
+
+    .navbar-toggler {
+        margin-right: 30vw;
+    }
+
+    .logoredsocial{
+        height: 15vh;
+        width: 15vh;
+    }
+
+    .textoredes{
+        font-size: 80%;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:1279px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    } 
+    
+    .carousel-inner img {
+        height: 60vh;
+    }
+
+    .imagenbulto{
+        height: 60vh;
+    }
+
+    .fotoporcinos{
+        height: 50vh;
+        width: 45vh;
+    }
+
+    .navbar-toggler {
+        margin-right: 30vw;
+    }
+
+    .logoredsocial{
+        height: 12vh;
+        width: 12vh;
+    }
+
+    .textoredes{
+        font-size: 75%;
+    }
+}
+
+@media screen and (min-width:550px) and (max-width:699px){
+    .logo img {
+        width:20vw;
+        height: 25vh;
+    }
+    
+    .carousel-inner img {
+        height: 40vh;
+    }
+
+    .imagenbulto{
+        height: 30vh;
+        width: 22vh;
+    }
+
+    .fotoporcinos{
+        height: 40vh;
+        width: 35vh;
+    }
+
+    .navbar-toggler {
+        margin-right: 20vw;
+    }
+
+    .logoredsocial{
+        height: 10vh;
+        width: 10vh;
+    }
+
+    .textoredes{
+        font-size: 70%;
+    }
+}
+
+@media screen and (min-width:250px) and (max-width:549px) {
+    .logo img {
+        width:25vw;
+        height: 20vh;
+    }
+    
+    .navbar-toggler {
+        margin-right: 15vw;
+    }
+
+    .carousel-inner img {
+        height: 25vh;
+    }
+
+    .imagenbulto{
+        width: 30vh;
+        height: 25vh;
+    }
+    
+    .fotoporcinos{
+        height: 25vh;
+        width: 15vh;
+    }
+
+    .logoredsocial{
+        height: 8vh;
+        width: 8vh;
+    }
+
+    .textoredes{
+        font-size: 60%;
+    }
+}
+
