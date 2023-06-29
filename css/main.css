@@ -41,6 +41,7 @@
 /* CAROUSEL */
 .container-fluid {
   --bs-gutter-x: none;
+  margin-top: -8px;
 }
 
 .img-fluid { /* Imagen Responsive */
@@ -62,6 +63,7 @@ h4 {
   color: orange;
   text-align: center;
   margin-top: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* PÁGINA INICIO */
@@ -76,28 +78,57 @@ h6 {
 }
 
 /* PÁGINA ACERCA DE NOSOTROS */
-.gridacerca {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: minmax(auto, 70px);
-  gap: 3em;
-  width: 100%;
-}
-
-.infoacerca {
-  font-size: 18px;
+.textoacercade {
+  font-size: 17px;
+  margin: 25px;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
-  padding-left: 20px;
-  margin-top: 50px;
 }
 
-.imagenbulto {
-  width: 500px;
-  height: 500px;
+.fraseacerca, .h5 {
+  text-decoration: underline;
+  font-style: oblique;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #323232;
+  text-align: center;
 }
 
-.footeracerca {
-  margin-top: 300px;
+.contenedorprincipal {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.contenedor {
+  max-width: 1300px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 6px 16px 0px rgba(27, 91, 100, 0.25);
+}
+
+.contenedorfotos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imagenacercade {
+  display: block;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: #2c2b2b;
+}
+
+.imagenacercade img {
+  width: 350px;
+  height: 320px;
+  padding: 20px;
+}
+
+/* PÁGINA LÍNEAS BOVINOS */
+.container, .text-center {
+  margin-top: 10px;
 }
 
 .content {
@@ -125,21 +156,28 @@ h6 {
   gap: 2em;
 }
 
+#imageneslineas {
+  margin-top: 30px;
+}
+
 /* PÁGINA LÍNEAS PORCINOS */
-.paddingtop {
-  padding-top: 30px;
+.containerporcinos {
+  margin: 10px;
 }
 
-.fotofooter {
-  display: flex;
-}
-
-.fotoporcinos {
-  padding-top: 30px;
-  width: 1000px;
+.p, .paddingtop {
+  padding-top: 10px;
+  text-align: justify;
 }
 
 /* PÁGINA CONTÁCTENOS */
+.pregunta {
+  color: #ffc90a;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 27px;
+}
+
 .logoredsocial img {
   width: 70px;
   height: 70px;
