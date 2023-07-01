@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   margin-left: 20px;
+  margin-top: 10px;
 }
 .logo img {
   height: 130px;
@@ -55,7 +56,7 @@
 }
 
 .carousel-inner img {
-  height: 645px;
+  height: 700px;
 }
 
 /* TÍTULOS GENERALES */
@@ -119,7 +120,6 @@ h6 {
   font-size: 10px;
   color: #2c2b2b;
 }
-
 .imagenacercade img {
   width: 350px;
   height: 320px;
@@ -176,27 +176,22 @@ h6 {
 }
 
 .container-form {
-  width: 100%;
-  max-width: 1100px;
-  margin: auto;
+  margin: 20px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px;
-  margin-top: 90px;
+  margin-top: 70px;
   text-align: justify;
 }
-
 .container-form h2 {
-  margin-top: 20px;
+  margin-top: 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
 .container-form p {
   font-size: 17px;
   line-height: 1.6;
   margin-top: 30px;
 }
-
 .container-form a {
   font-size: 17px;
   display: inline-block;
@@ -221,13 +216,6 @@ h6 {
   outline: 0px;
 }
 
-.container-form form textarea {
-  max-width: 530px;
-  min-width: 530px;
-  min-height: 140px;
-  max-height: 150px;
-}
-
 .container-form .btn-enviar {
   padding: 15px;
   font-size: 16px;
@@ -249,13 +237,6 @@ h6 {
   .navbar-toggler {
     margin-right: 30vw;
   }
-  .logoredsocial {
-    height: 15vh;
-    width: 15vh;
-  }
-  .textoredes {
-    font-size: 80%;
-  }
 }
 @media screen and (min-width: 700px) and (max-width: 1279px) {
   header {
@@ -264,79 +245,139 @@ h6 {
   nav {
     padding: 10px 0px;
   }
-  .carousel-inner img {
-    height: 60vh;
-  }
-  .imagenbulto {
-    height: 60vh;
-  }
-  .fotoporcinos {
-    height: 50vh;
-    width: 45vh;
-  }
   .navbar-toggler {
-    margin-right: 30vw;
+    margin-right: 10vw;
   }
-  .logoredsocial {
-    height: 12vh;
-    width: 12vh;
+  .carousel-inner img {
+    height: 85vh;
   }
-  .textoredes {
-    font-size: 75%;
+  /* Línea Bovinos, Ovinos y Porcino*/
+  .contenedorprincipal {
+    display: grid;
+    place-content: center;
+  }
+  .contenedorfotos {
+    flex-direction: column;
+  }
+  /* Contáctenos */
+  .containergeneral {
+    padding-top: none;
+  }
+  .container-form {
+    margin: 20px;
+  }
+  .container-form p {
+    font-size: 17px;
+  }
+  .container-form a {
+    font-size: 15px;
+  }
+  .container-form form .campo, textarea {
+    width: 100%;
+    font-size: 15px;
+  }
+  .container-form .btn-enviar {
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 550px) and (max-width: 699px) {
-  .logo img {
-    width: 20vw;
-    height: 25vh;
+  header {
+    flex-direction: column;
   }
-  .carousel-inner img {
-    height: 40vh;
-  }
-  .imagenbulto {
-    height: 30vh;
-    width: 22vh;
-  }
-  .fotoporcinos {
-    height: 40vh;
-    width: 35vh;
+  nav {
+    padding: 10px 0px;
   }
   .navbar-toggler {
-    margin-right: 20vw;
+    margin-right: 5vw;
   }
-  .logoredsocial {
-    height: 10vh;
-    width: 10vh;
+  .carousel-inner img {
+    height: 65vh;
   }
-  .textoredes {
-    font-size: 70%;
+  .blockquote-footer {
+    font-size: 15px;
+  }
+  /* Línea Bovinos, Ovinos y Porcino*/
+  .contenedorprincipal {
+    display: grid;
+    place-content: center;
+  }
+  .contenedorfotos {
+    flex-direction: column;
+  }
+  /* Contáctenos */
+  .containergeneral {
+    padding-top: none;
+  }
+  .container-form {
+    margin: 20px;
+  }
+  .container-form p {
+    font-size: 15px;
+  }
+  .container-form a {
+    font-size: 12px;
+  }
+  .container-form form .campo, textarea {
+    width: 100%;
+    font-size: 15px;
+  }
+  .container-form .btn-enviar {
+    font-size: 14px;
   }
 }
-@media screen and (min-width: 250px) and (max-width: 549px) {
-  .logo img {
-    width: 25vw;
-    height: 20vh;
+@media screen and (min-width: 320px) and (max-width: 549px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    padding: 10px 0px;
   }
   .navbar-toggler {
-    margin-right: 15vw;
+    margin-right: 5vw;
   }
   .carousel-inner img {
-    height: 25vh;
+    height: 45vh;
   }
-  .imagenbulto {
-    width: 30vh;
-    height: 25vh;
+  .blockquote-footer {
+    font-size: 10px;
   }
-  .fotoporcinos {
-    height: 25vh;
-    width: 15vh;
+  /* Línea Bovinos, Ovinos y Porcino*/
+  .contenedor {
+    height: 100%;
+    padding-bottom: 40px;
   }
-  .logoredsocial {
-    height: 8vh;
-    width: 8vh;
+  .contenedorfotos {
+    flex-direction: column;
   }
-  .textoredes {
-    font-size: 60%;
+  .contenedorfotos h5 {
+    font-size: 12px;
+  }
+  .imagenacercade {
+    flex-direction: column;
+  }
+  .imagenacercade img {
+    width: 100%;
+    height: 80%;
+  }
+  /* Contáctenos */
+  .containergeneral {
+    padding-top: none;
+  }
+  .container-form {
+    margin: 10px;
+  }
+  .container-form p {
+    font-size: 9px;
+  }
+  .container-form a {
+    font-size: 8px;
+  }
+  .container-form form .campo, textarea {
+    width: 95%;
+    font-size: 8px;
+  }
+  .container-form .btn-enviar {
+    font-size: 10px;
   }
 }
 /* FOOTER */

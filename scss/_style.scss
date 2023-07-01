@@ -58,12 +58,13 @@ h6 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     color: #2c2b2b;
-}
 
-.imagenacercade img{
-    width: 350px;
-    height: 320px;
-    padding: 20px;
+    img{
+        width: 350px;
+        height: 320px;
+        padding: 20px;
+
+    }
 }
 
 /* PÁGINA LÍNEAS BOVINOS */
@@ -118,35 +119,34 @@ h6 {
 .containergeneral{
     padding-top: none;
 }
+
 .container-form{
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
+    margin: 20px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 50px;
-    margin-top: 90px;
+    margin-top: 70px;
     text-align: justify;
-}
 
-.container-form h2{
-    margin-top: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    h2{
+        margin-top: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
 
-.container-form p{
-    font-size: 17px;
-    line-height: 1.6;
-    margin-top: 30px;
-}
+    p{
+        font-size: 17px;
+        line-height: 1.6;
+        margin-top: 30px;
+    }
 
-.container-form a{
-    font-size: 17px;
-    display: inline-block;
-    text-decoration: none;
-    width: 100%;
-    color: black;
-    font-weight: 700;
+    a{
+        font-size: 17px;
+        display: inline-block;
+        text-decoration: none;
+        width: 100%;
+        color: black;
+        font-weight: 700;
+    }
 }
 
 .container-form a i{
@@ -162,13 +162,6 @@ h6 {
     margin-bottom: 20px;
     border-radius: 3px;
     outline: 0px;
-}
-
-.container-form form textarea {
-    max-width: 530px;
-    min-width: 530px;
-    min-height: 140px;
-    max-height: 150px;
 }
 
 .container-form .btn-enviar {
@@ -187,24 +180,17 @@ h6 {
     background: #e39403;
 }
 
+
 /* MEDIA QUERIES */
 @media (min-width:1280px){
 
     .navbar-toggler {
         margin-right: 30vw;
     }
-
-    .logoredsocial{
-        height: 15vh;
-        width: 15vh;
-    }
-
-    .textoredes{
-        font-size: 80%;
-    }
 }
 
 @media screen and (min-width:700px) and (max-width:1279px){
+
     header{
         flex-direction: column;
     }
@@ -213,98 +199,176 @@ h6 {
         padding: 10px 0px;
     } 
     
-    .carousel-inner img {
-        height: 60vh;
-    }
-
-    .imagenbulto{
-        height: 60vh;
-    }
-
-    .fotoporcinos{
-        height: 50vh;
-        width: 45vh;
-    }
-
     .navbar-toggler {
-        margin-right: 30vw;
+        margin-right: 10vw;
     }
 
-    .logoredsocial{
-        height: 12vh;
-        width: 12vh;
+    .carousel-inner img {
+        height: 85vh;
     }
 
-    .textoredes{
-        font-size: 75%;
+    /* Línea Bovinos, Ovinos y Porcino*/
+    .contenedorprincipal{
+        display: grid;
+        place-content: center;
+    }
+
+    .contenedorfotos{
+        flex-direction: column;
+    }
+
+    /* Contáctenos */
+    .containergeneral{
+        padding-top: none;
+    }
+    
+    .container-form{
+        margin: 20px;
+             
+        p{
+            font-size: 17px;
+        }
+    
+        a{
+            font-size: 15px;
+        }
+    }
+    
+    .container-form form .campo, textarea{
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    .container-form .btn-enviar {
+        font-size: 14px;
     }
 }
 
 @media screen and (min-width:550px) and (max-width:699px){
-    .logo img {
-        width:20vw;
-        height: 25vh;
-    }
-    
-    .carousel-inner img {
-        height: 40vh;
+    header{
+        flex-direction: column;
     }
 
-    .imagenbulto{
-        height: 30vh;
-        width: 22vh;
-    }
-
-    .fotoporcinos{
-        height: 40vh;
-        width: 35vh;
-    }
-
-    .navbar-toggler {
-        margin-right: 20vw;
-    }
-
-    .logoredsocial{
-        height: 10vh;
-        width: 10vh;
-    }
-
-    .textoredes{
-        font-size: 70%;
-    }
-}
-
-@media screen and (min-width:250px) and (max-width:549px) {
-    .logo img {
-        width:25vw;
-        height: 20vh;
-    }
+    nav{
+        padding: 10px 0px;
+    } 
     
     .navbar-toggler {
-        margin-right: 15vw;
+        margin-right: 5vw;
     }
 
     .carousel-inner img {
-        height: 25vh;
+        height: 65vh;
     }
 
-    .imagenbulto{
-        width: 30vh;
-        height: 25vh;
+    .blockquote-footer{
+        font-size: 15px;
+    }
+
+    /* Línea Bovinos, Ovinos y Porcino*/
+    .contenedorprincipal{
+        display: grid;
+        place-content: center;
+    }
+
+    .contenedorfotos{
+        flex-direction: column;
+    }
+
+    /* Contáctenos */
+    .containergeneral{
+        padding-top: none;
     }
     
-    .fotoporcinos{
-        height: 25vh;
-        width: 15vh;
+    .container-form{
+        margin: 20px;
+             
+        p{
+            font-size: 15px;
+        }
+    
+        a{
+            font-size: 12px;
+        }
     }
-
-    .logoredsocial{
-        height: 8vh;
-        width: 8vh;
+    
+    .container-form form .campo, textarea{
+        width: 100%;
+        font-size: 15px;
     }
-
-    .textoredes{
-        font-size: 60%;
+    
+    .container-form .btn-enviar {
+        font-size: 14px;
     }
 }
+  
+ @media screen and (min-width:320px) and (max-width:549px) {
+    header{
+        flex-direction: column;
+    }
 
+    nav{
+        padding: 10px 0px;
+    } 
+    
+    .navbar-toggler {
+        margin-right: 5vw;
+    }
+
+    .carousel-inner img {
+        height: 45vh;
+    }
+
+    .blockquote-footer{
+        font-size: 10px;
+    }
+
+    /* Línea Bovinos, Ovinos y Porcino*/
+       .contenedor{
+        height: 100%;
+        padding-bottom: 40px;
+    }
+
+    .contenedorfotos{
+        flex-direction: column;
+
+        h5{
+            font-size: 12px;
+        }
+    }
+
+    .imagenacercade{
+       flex-direction: column;
+
+       img{
+        width: 100%;
+        height: 80%;
+        }
+    }
+
+    /* Contáctenos */
+    .containergeneral{
+        padding-top: none;
+    }
+    
+    .container-form{
+        margin: 10px;
+             
+        p{
+            font-size: 9px;
+        }
+    
+        a{
+            font-size: 8px;
+        }
+    }
+    
+    .container-form form .campo, textarea{
+        width: 95%;
+        font-size: 8px;
+    }
+    
+    .container-form .btn-enviar {
+        font-size: 10px;
+    }
+} 
